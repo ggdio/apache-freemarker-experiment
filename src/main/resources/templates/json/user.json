@@ -1,0 +1,6 @@
+{
+	name: "${user.name}",
+	age: ${user.age},
+	state: "${user.state}",
+	city: "${user.city}"
+}
