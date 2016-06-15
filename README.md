@@ -2,10 +2,34 @@ Template Engine
 ======
 A simple facade for multiple template engines(eg.: freemarker, mustache, jtwig, etc...)
 
-## Usage
-```
-git clone https://github.com/ggdio/template-engine.git
-```
+## Usage(freemarker)
+ * FTL('classpath:/templates/ftl/person-list.ftl'):
+   ```
+   [#ftl]
+   {
+  	"name": "${(person.name)!name}",
+  	"birthday": "${(person.birthday)!birthday}",
+  	"location": "${(person.location)!location}"
+  }
+  ```
+
+ * Java:
+  ```
+  // Create person model
+  Person person = new Person("Guilherme Dio", LocalDate.of(1992, 11, 27), "São Paulo");
+  
+  // Render and write to sysout
+  System.out.println(TemplateEngine.getInstance().render("person-list.ftl", person));
+  ```
+
+ * sysout:
+  ```
+  {
+    "name": "Guilherme Dio",
+    "birthday": "1992-11-27 00:00:00",
+    "location": "São Paulo"
+  }
+  ```
 
 ## Contributors
 
