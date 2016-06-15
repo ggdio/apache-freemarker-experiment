@@ -12,6 +12,19 @@ A simple facade for multiple template engines(eg.: freemarker, mustache, jtwig, 
   	"location": "${(person.location)!location}"
   }
   ```
+  
+ * Person.class
+   ```
+   public class Person {
+      String name;
+      LocalDate birthday;
+      String location;
+      
+      //constructor (name, birthday, location)
+      
+      //getters
+   }
+   ```
 
  * Java:
   ```
