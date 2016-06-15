@@ -26,7 +26,7 @@ A simple facade for multiple template engines(eg.: freemarker, mustache, jtwig, 
   ```
   {
     "name": "Guilherme Dio",
-    "birthday": "1992-11-27",
+    "birthday": "11/27/1992",
     "location": "São Paulo"
   }
   ```
