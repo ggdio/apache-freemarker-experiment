@@ -8,7 +8,7 @@ A simple facade for multiple template engines(eg.: freemarker, mustache, jtwig, 
    [#ftl]
    {
   	"name": "${(person.name)!name}",
-  	"birthday": "${(person.birthday)!birthday}",
+  	"birthday": "${(person.birthday?date)!birthday?date}",
   	"location": "${(person.location)!location}"
   }
   ```
