@@ -1,5 +1,0 @@
-[
-	<#list users as user>
-		<#include "user.json"><#sep>,
-	</#list>
-]

@@ -1,4 +1,4 @@
-package poc.freemarker.model;
+package br.com.ggdio.templating.test.model;
 
 public class User {
 
